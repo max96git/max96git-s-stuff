@@ -1,164 +1,176 @@
--- Instances:
-
 local Converted = {
-	["_SypzWindow"] = Instance.new("ScreenGui");
-	["_Frame"] = Instance.new("Frame");
-	["_TextBox"] = Instance.new("TextBox");
-	["_UICorner"] = Instance.new("UICorner");
-	["_ExecuteButton"] = Instance.new("TextButton");
-	["_Client"] = Instance.new("LocalScript");
-	["_UICorner1"] = Instance.new("UICorner");
-	["_UICorner2"] = Instance.new("UICorner");
-	["_Remotes"] = Instance.new("Folder");
-	["_EXecuteServer"] = Instance.new("RemoteEvent");
-	["_FireServer"] = Instance.new("Script");
+	["_SypazeWindow"] = Instance.new("ScreenGui");
+	["_Drag"] = Instance.new("Frame");
+	["_Main"] = Instance.new("Frame");
+	["_Name"] = Instance.new("TextLabel");
+	["_Field"] = Instance.new("TextBox");
+	["_FieldCorner"] = Instance.new("UICorner");
+	["_Exe"] = Instance.new("TextButton");
+	["_Script"] = Instance.new("Script");
 	["_Loadstring"] = Instance.new("ModuleScript");
 	["_FiOne"] = Instance.new("ModuleScript");
 	["_Yueliang"] = Instance.new("ModuleScript");
-	["_DragScript"] = Instance.new("LocalScript");
-	["_ClearButton"] = Instance.new("TextButton");
-	["_Client1"] = Instance.new("LocalScript");
-	["_UICorner3"] = Instance.new("UICorner");
-	["_ResetButton"] = Instance.new("TextButton");
-	["_Client2"] = Instance.new("LocalScript");
-	["_UICorner4"] = Instance.new("UICorner");
-	["_ImageLabel"] = Instance.new("ImageLabel");
-	["_TextLabel"] = Instance.new("TextLabel");
-	["_respawn"] = Instance.new("ImageLabel");
+	["_Execute"] = Instance.new("LocalScript");
+	["_RemoteEvent"] = Instance.new("RemoteEvent");
+	["_ExeCorner"] = Instance.new("UICorner");
+	["_Hide"] = Instance.new("TextButton");
+	["_HideSC"] = Instance.new("LocalScript");
+	["_HideCorner"] = Instance.new("UICorner");
+	["_Cle"] = Instance.new("TextButton");
+	["_Clear"] = Instance.new("LocalScript");
+	["_CleCorner"] = Instance.new("UICorner");
+	["_RE"] = Instance.new("TextButton");
+	["_Respawn"] = Instance.new("LocalScript");
+	["_ServerEvents"] = Instance.new("Script");
+	["_Respawn1"] = Instance.new("RemoteEvent");
+	["_RECorner"] = Instance.new("UICorner");
+	["_MainCorner"] = Instance.new("UICorner");
+	["_SmoothDrag"] = Instance.new("LocalScript");
 }
+Converted["_SypazeWindow"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_SypazeWindow"].Name = "SypazeWindow"
+Converted["_SypazeWindow"].Parent = game:GetService("CoreGui")
 
--- Properties:
+Converted["_Drag"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Drag"].BorderSizePixel = 0
+Converted["_Drag"].Position = UDim2.new(0, 376, 0, 163)
+Converted["_Drag"].Size = UDim2.new(0, 624, 0, 26)
+Converted["_Drag"].Name = "Drag"
+Converted["_Drag"].Parent = Converted["_SypazeWindow"]
 
-Converted["_SypzWindow"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_SypzWindow"].Name = "SypzWindow"
-Converted["_SypzWindow"].Parent = game:GetService("CoreGui")
+Converted["_Main"].BackgroundColor3 = Color3.fromRGB(31.000001952052116, 31.000001952052116, 31.000001952052116)
+Converted["_Main"].BorderSizePixel = 0
+Converted["_Main"].Position = UDim2.new(0, 0, 0, 24)
+Converted["_Main"].Size = UDim2.new(0, 624, 0, 347)
+Converted["_Main"].Name = "Main"
+Converted["_Main"].Parent = Converted["_Drag"]
 
-Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(21.000000648200512, 21.000000648200512, 21.000000648200512)
-Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Frame"].BorderSizePixel = 0
-Converted["_Frame"].Position = UDim2.new(0.200889528, 0, 0.419047564, 0)
-Converted["_Frame"].Size = UDim2.new(0, 547, 0, 333)
-Converted["_Frame"].Parent = Converted["_SypzWindow"]
+Converted["_Name"].Font = Enum.Font.Unknown
+Converted["_Name"].Text = "Sypaze X"
+Converted["_Name"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Name"].TextScaled = true
+Converted["_Name"].TextSize = 14
+Converted["_Name"].TextWrapped = true
+Converted["_Name"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Name"].BackgroundTransparency = 1
+Converted["_Name"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Name"].BorderSizePixel = 0
+Converted["_Name"].Position = UDim2.new(0, 0, -0.0749279559, 0)
+Converted["_Name"].Size = UDim2.new(0, 623, 0, 26)
+Converted["_Name"].Name = "Name"
+Converted["_Name"].Parent = Converted["_Main"]
 
-Converted["_TextBox"].ClearTextOnFocus = false
-Converted["_TextBox"].CursorPosition = -1
-Converted["_TextBox"].Font = Enum.Font.Unknown
-Converted["_TextBox"].PlaceholderColor3 = Color3.fromRGB(176.00000470876694, 176.00000470876694, 176.00000470876694)
-Converted["_TextBox"].PlaceholderText = "-- script here"
-Converted["_TextBox"].Text = ""
-Converted["_TextBox"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextBox"].TextSize = 24
-Converted["_TextBox"].TextWrapped = true
-Converted["_TextBox"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_TextBox"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_TextBox"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextBox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextBox"].BorderSizePixel = 0
-Converted["_TextBox"].Position = UDim2.new(0.0229507256, 0, 0.161840484, 0)
-Converted["_TextBox"].Size = UDim2.new(0, 518, 0, 223)
-Converted["_TextBox"].Parent = Converted["_Frame"]
+Converted["_Field"].CursorPosition = -1
+Converted["_Field"].Font = Enum.Font.Unknown
+Converted["_Field"].PlaceholderColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Converted["_Field"].PlaceholderText = "-- Insert Script Here"
+Converted["_Field"].Text = ""
+Converted["_Field"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Field"].TextSize = 14
+Converted["_Field"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Field"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_Field"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Field"].BorderColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Converted["_Field"].BorderSizePixel = 0
+Converted["_Field"].Position = UDim2.new(0, 12, 0, 2)
+Converted["_Field"].Size = UDim2.new(0, 599, 0, 279)
+Converted["_Field"].Name = "Field"
+Converted["_Field"].Parent = Converted["_Main"]
 
-Converted["_UICorner"].Parent = Converted["_TextBox"]
+Converted["_FieldCorner"].CornerRadius = UDim.new(0, 12)
+Converted["_FieldCorner"].Name = "FieldCorner"
+Converted["_FieldCorner"].Parent = Converted["_Field"]
 
-Converted["_ExecuteButton"].Font = Enum.Font.Unknown
-Converted["_ExecuteButton"].Text = "Execute"
-Converted["_ExecuteButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ExecuteButton"].TextScaled = true
-Converted["_ExecuteButton"].TextSize = 45
-Converted["_ExecuteButton"].TextWrapped = true
-Converted["_ExecuteButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ExecuteButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ExecuteButton"].BorderSizePixel = 0
-Converted["_ExecuteButton"].Position = UDim2.new(0.0215556193, 0, 0.854321897, 0)
-Converted["_ExecuteButton"].Size = UDim2.new(0, 200, 0, 24)
-Converted["_ExecuteButton"].Name = "ExecuteButton"
-Converted["_ExecuteButton"].Parent = Converted["_Frame"]
+Converted["_Exe"].Font = Enum.Font.Unknown
+Converted["_Exe"].Text = "Execute"
+Converted["_Exe"].TextColor3 = Color3.fromRGB(0, 255, 17.00000088661909)
+Converted["_Exe"].TextScaled = true
+Converted["_Exe"].TextSize = 14
+Converted["_Exe"].TextWrapped = true
+Converted["_Exe"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Exe"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Exe"].Position = UDim2.new(0, 12, 0, 297)
+Converted["_Exe"].Size = UDim2.new(0, 116, 0, 29)
+Converted["_Exe"].Name = "Exe"
+Converted["_Exe"].Parent = Converted["_Main"]
 
-Converted["_UICorner1"].Parent = Converted["_ExecuteButton"]
+Converted["_Script"].Parent = Converted["_Exe"]
 
-Converted["_UICorner2"].Parent = Converted["_Frame"]
+Converted["_RemoteEvent"].Parent = Converted["_Exe"]
 
-Converted["_Remotes"].Name = "Remotes"
-Converted["_Remotes"].Parent = Converted["_Frame"]
+Converted["_ExeCorner"].CornerRadius = UDim.new(0, 12)
+Converted["_ExeCorner"].Name = "ExeCorner"
+Converted["_ExeCorner"].Parent = Converted["_Exe"]
 
-Converted["_EXecuteServer"].Name = "EXecuteServer"
-Converted["_EXecuteServer"].Parent = Converted["_Remotes"]
+Converted["_Hide"].Font = Enum.Font.Unknown
+Converted["_Hide"].Text = "Unload"
+Converted["_Hide"].TextColor3 = Color3.fromRGB(0, 255, 17.00000088661909)
+Converted["_Hide"].TextScaled = true
+Converted["_Hide"].TextSize = 14
+Converted["_Hide"].TextWrapped = true
+Converted["_Hide"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Hide"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Hide"].Position = UDim2.new(0, 136, 0, 297)
+Converted["_Hide"].Size = UDim2.new(0, 116, 0, 29)
+Converted["_Hide"].Name = "Hide"
+Converted["_Hide"].Parent = Converted["_Main"]
 
-Converted["_FireServer"].Name = "FireServer"
-Converted["_FireServer"].Parent = Converted["_EXecuteServer"]
+Converted["_HideCorner"].CornerRadius = UDim.new(0, 12)
+Converted["_HideCorner"].Name = "HideCorner"
+Converted["_HideCorner"].Parent = Converted["_Hide"]
 
-Converted["_ClearButton"].Font = Enum.Font.Unknown
-Converted["_ClearButton"].Text = "Clear"
-Converted["_ClearButton"].TextColor3 = Color3.fromRGB(34.00000177323818, 255, 0)
-Converted["_ClearButton"].TextScaled = true
-Converted["_ClearButton"].TextSize = 45
-Converted["_ClearButton"].TextWrapped = true
-Converted["_ClearButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ClearButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ClearButton"].BorderSizePixel = 0
-Converted["_ClearButton"].Position = UDim2.new(0.40181157, 0, 0.853365302, 0)
-Converted["_ClearButton"].Size = UDim2.new(0, 200, 0, 24)
-Converted["_ClearButton"].Name = "ClearButton"
-Converted["_ClearButton"].Parent = Converted["_Frame"]
+Converted["_Cle"].Font = Enum.Font.Unknown
+Converted["_Cle"].Text = "Clear"
+Converted["_Cle"].TextColor3 = Color3.fromRGB(0, 255, 17.00000088661909)
+Converted["_Cle"].TextScaled = true
+Converted["_Cle"].TextSize = 14
+Converted["_Cle"].TextWrapped = true
+Converted["_Cle"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cle"].Position = UDim2.new(0, 260, 0, 297)
+Converted["_Cle"].Size = UDim2.new(0, 116, 0, 29)
+Converted["_Cle"].Name = "Cle"
+Converted["_Cle"].Parent = Converted["_Main"]
 
-Converted["_UICorner3"].Parent = Converted["_ClearButton"]
+Converted["_CleCorner"].CornerRadius = UDim.new(0, 12)
+Converted["_CleCorner"].Name = "CleCorner"
+Converted["_CleCorner"].Parent = Converted["_Cle"]
 
-Converted["_ResetButton"].Font = Enum.Font.Unknown
-Converted["_ResetButton"].Text = "Reset Character"
-Converted["_ResetButton"].TextColor3 = Color3.fromRGB(34.00000177323818, 255, 0)
-Converted["_ResetButton"].TextScaled = true
-Converted["_ResetButton"].TextSize = 45
-Converted["_ResetButton"].TextWrapped = true
-Converted["_ResetButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ResetButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ResetButton"].BorderSizePixel = 0
-Converted["_ResetButton"].Position = UDim2.new(0.767442286, 0, 0.852408767, 0)
-Converted["_ResetButton"].Size = UDim2.new(0, 117, 0, 24)
-Converted["_ResetButton"].Name = "ResetButton"
-Converted["_ResetButton"].Parent = Converted["_Frame"]
+Converted["_RE"].Font = Enum.Font.Unknown
+Converted["_RE"].Text = "RE"
+Converted["_RE"].TextColor3 = Color3.fromRGB(0, 255, 17.00000088661909)
+Converted["_RE"].TextScaled = true
+Converted["_RE"].TextSize = 14
+Converted["_RE"].TextWrapped = true
+Converted["_RE"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_RE"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_RE"].Position = UDim2.new(0, 560, 0, 297)
+Converted["_RE"].Size = UDim2.new(0, 51, 0, 29)
+Converted["_RE"].Name = "RE"
+Converted["_RE"].Parent = Converted["_Main"]
 
-Converted["_UICorner4"].Parent = Converted["_ResetButton"]
+Converted["_ServerEvents"].Name = "ServerEvents"
+Converted["_ServerEvents"].Parent = Converted["_RE"]
 
-Converted["_ImageLabel"].Image = "rbxassetid://18245567020"
-Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel"].BackgroundTransparency = 1
-Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel"].BorderSizePixel = 0
-Converted["_ImageLabel"].Position = UDim2.new(0.855575919, 0, 0.0240240246, 0)
-Converted["_ImageLabel"].Size = UDim2.new(0, 62, 0, 37)
-Converted["_ImageLabel"].Parent = Converted["_Frame"]
+Converted["_Respawn"].Name = "Respawn"
+Converted["_Respawn"].Parent = Converted["_ServerEvents"]
 
-Converted["_TextLabel"].Font = Enum.Font.Unknown
-Converted["_TextLabel"].Text = "Sypz SS"
-Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].TextScaled = true
-Converted["_TextLabel"].TextSize = 14
-Converted["_TextLabel"].TextWrapped = true
-Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].BackgroundTransparency = 1
-Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel"].BorderSizePixel = 0
-Converted["_TextLabel"].Position = UDim2.new(0, 0, 0.0240240246, 0)
-Converted["_TextLabel"].Size = UDim2.new(0, 200, 0, 37)
-Converted["_TextLabel"].Parent = Converted["_Frame"]
+Converted["_RECorner"].CornerRadius = UDim.new(0, 12)
+Converted["_RECorner"].Name = "RECorner"
+Converted["_RECorner"].Parent = Converted["_RE"]
 
-Converted["_respawn"].Image = "rbxassetid://16884178261"
-Converted["_respawn"].ImageRectOffset = Vector2.new(76, 0)
-Converted["_respawn"].ImageRectSize = Vector2.new(36, 36)
-Converted["_respawn"].BackgroundTransparency = 1
-Converted["_respawn"].Position = UDim2.new(0.855575919, 0, 0.888888896, 0)
-Converted["_respawn"].Size = UDim2.new(0, 35, 0, 37)
-Converted["_respawn"].Name = "respawn"
-Converted["_respawn"].Parent = Converted["_Frame"]
+Converted["_MainCorner"].CornerRadius = UDim.new(0, 12)
+Converted["_MainCorner"].Name = "MainCorner"
+Converted["_MainCorner"].Parent = Converted["_Main"]
 
--- Module Scripts:
+-- Fake Module Scripts:
 
 local fake_module_scripts = {}
 
-do -- Fake Module: StarterGui.SypzWindow.Frame.Remotes.EXecuteServer.FireServer.Loadstring
+do -- Fake Module: StarterGui.SypazeWindow.Drag.Main.Exe.Script.Loadstring
     local script = Instance.new("ModuleScript")
     script.Name = "Loadstring"
-    script.Parent = Converted["_FireServer"]
+    script.Parent = Converted["_Script"]
     local function module_script()
 		local compile = require(script:WaitForChild("Yueliang"))
 		local createExecutable = require(script:WaitForChild("FiOne"))
@@ -182,12 +194,12 @@ do -- Fake Module: StarterGui.SypzWindow.Frame.Remotes.EXecuteServer.FireServer.
     fake_module_scripts[script] = module_script
 end
 
--- Local Scripts:
+-- Fake Local Scripts:
 
-local function BXVODZA_fake_script() -- Fake Script: StarterGui.SypzWindow.Frame.ExecuteButton.Client
+local function OFJHPV_fake_script() -- Fake Script: StarterGui.SypazeWindow.Drag.Main.Exe.Execute
     local script = Instance.new("LocalScript")
-    script.Name = "Client"
-    script.Parent = Converted["_ExecuteButton"]
+    script.Name = "Execute"
+    script.Parent = Converted["_Exe"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -197,17 +209,16 @@ local function BXVODZA_fake_script() -- Fake Script: StarterGui.SypzWindow.Frame
         return req(obj)
     end
 
-	local remotes = script.Parent.Parent.Remotes
+	local RS = script.Parent.RemoteEvent
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		local textbox = script.Parent.Parent.TextBox
-		remotes.EXecuteServer:FireServer(textbox.Text)
+		RS:FireServer(script.Parent.Parent.Field.Text)
 	end)
 end
-local function RJDQ_fake_script() -- Fake Script: StarterGui.SypzWindow.Frame.DragScript
+local function MNNAPC_fake_script() -- Fake Script: StarterGui.SypazeWindow.Drag.Main.Hide.HideSC
     local script = Instance.new("LocalScript")
-    script.Name = "DragScript"
-    script.Parent = Converted["_Frame"]
+    script.Name = "HideSC"
+    script.Parent = Converted["_Hide"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -216,7 +227,109 @@ local function RJDQ_fake_script() -- Fake Script: StarterGui.SypzWindow.Frame.Dr
         end
         return req(obj)
     end
+
+	local text = script.Parent.Parent.Field
+	local hidden = false
+	script.Parent.MouseButton1Click:Connect(function()
+	if hidden == false then
 	
+	
+			text.TextTransparency = 0.1
+			wait()
+			text.TextTransparency = 0.2
+			wait()
+			text.TextTransparency = 0.3
+			wait()
+			text.TextTransparency = 0.4
+			wait()
+			text.TextTransparency = 0.5
+			wait()
+			text.TextTransparency = 0.6
+			wait()
+			text.TextTransparency = 0.7
+			wait()
+			text.TextTransparency = 0.8
+			wait()
+			text.TextTransparency = 0.9
+			wait()
+			text.TextTransparency = 1
+		hidden = true
+	else
+		hidden = false
+			text.TextTransparency = 0.9
+			wait()
+			text.TextTransparency = 0.8
+			wait()
+			text.TextTransparency = 0.7
+			wait()
+			text.TextTransparency = 0.6
+			wait()
+			text.TextTransparency = 0.5
+			wait()
+			text.TextTransparency = 0.4
+			wait()
+			text.TextTransparency = 0.3
+			wait()
+			text.TextTransparency = 0.2
+			wait()
+			text.TextTransparency = 0.1
+			wait()
+			text.TextTransparency = 0
+	end	
+	end)
+	
+end
+local function NXGSD_fake_script() -- Fake Script: StarterGui.SypazeWindow.Drag.Main.Cle.Clear
+    local script = Instance.new("LocalScript")
+    script.Name = "Clear"
+    script.Parent = Converted["_Cle"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local text = script.Parent.Parent.Field
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		text.Text = "Cleared!"
+		wait(1)
+		text.Text = "-- Insert Script Here"
+	end)
+end
+local function AKNU_fake_script() -- Fake Script: StarterGui.SypazeWindow.Drag.Main.RE.Respawn
+    local script = Instance.new("LocalScript")
+    script.Name = "Respawn"
+    script.Parent = Converted["_RE"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:connect(function()
+			script.Parent.ServerEvents.Respawn:FireServer()
+		end)
+end
+local function HDFNWXH_fake_script() -- Fake Script: StarterGui.SypazeWindow.Drag.SmoothDrag
+    local script = Instance.new("LocalScript")
+    script.Name = "SmoothDrag"
+    script.Parent = Converted["_Drag"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
 	local dragToggle = nil
@@ -253,43 +366,10 @@ local function RJDQ_fake_script() -- Fake Script: StarterGui.SypzWindow.Frame.Dr
 	end)
 	
 end
-local function QWBNFV_fake_script() -- Fake Script: StarterGui.SypzWindow.Frame.ClearButton.Client
-    local script = Instance.new("LocalScript")
-    script.Name = "Client"
-    script.Parent = Converted["_ClearButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.TextBox.Text = ""
-	end)
-end
-local function VKHYCR_fake_script() -- Fake Script: StarterGui.SypzWindow.Frame.ResetButton.Client
-    local script = Instance.new("LocalScript")
-    script.Name = "Client"
-    script.Parent = Converted["_ResetButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.Health = 0
-	end)
-end
-
-Converted["_SypzWindow"].Enabled = true
-coroutine.wrap(BXVODZA_fake_script)()
-coroutine.wrap(RJDQ_fake_script)()
-coroutine.wrap(QWBNFV_fake_script)()
-coroutine.wrap(VKHYCR_fake_script)()
+Converted["_SypazeWindow"].Enabled = true
+coroutine.wrap(OFJHPV_fake_script)()
+coroutine.wrap(MNNAPC_fake_script)()
+coroutine.wrap(NXGSD_fake_script)()
+coroutine.wrap(AKNU_fake_script)()
+coroutine.wrap(HDFNWXH_fake_script)()
